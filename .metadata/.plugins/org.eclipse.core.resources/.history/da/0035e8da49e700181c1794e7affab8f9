@@ -1,0 +1,7 @@
+package com.durgasoft.selenium.ecommerce.listeners;
+
+import com.durgasoft.selenium.ecommerce.basepage.BasePage;
+
+public class listeners extends BasePage {
+
+}

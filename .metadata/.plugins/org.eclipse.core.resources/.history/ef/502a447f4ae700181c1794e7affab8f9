@@ -1,0 +1,47 @@
+package com.durgasoft.selenium.ecommerce.listeners;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
+import com.durgasoft.selenium.ecommerce.basepage.BasePage;
+
+public class listeners extends BasePage implements ITestListener {
+
+	public void onTestStart(ITestResult result) {
+		Reporter.log("test is started:"+result.getMethod().getMethodName());
+		
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		Reporter.log("test is sucess:"+result.getMethod().getMethodName());
+		
+	}
+
+	public void onTestFailure(ITestResult result) {
+		Reporter.log("test is fails:"+result.getMethod().getMethodName());
+		
+	}
+
+	public void onTestSkipped(ITestResult result) {
+		Reporter.log("test is skipped:"+result.getMethod().getMethodName());
+		
+	}
+
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

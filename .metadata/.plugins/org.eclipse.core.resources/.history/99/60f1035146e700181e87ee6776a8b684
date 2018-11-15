@@ -1,0 +1,76 @@
+package com.durgasoft.selenium.ecommerce.listeners;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
+import com.durgasoft.selenium.ecommerce.basepage.BasePage;
+import com.sun.jna.platform.FileUtils;
+
+public class listeners extends BasePage implements ITestListener {
+
+	public void onTestStart(ITestResult result) {
+	Reporter.log("test start running:"+result.getMethod().getMethodName());	
+		
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		Reporter.log("test is succeed:"+result.getMethod().getMethodName());
+		Calendar cal=cal.getInstance();
+		SimpleDateFormat dtformat=new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
+		String methodname = result.getName();
+		if(result.isSuccess())
+		{
+			File sourcepath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			String reportdirectory = (new File(System.getProperty("user.dir")).getAbsolutePath()
+					+"/src/main/java/com/durgasoft/ecommerce/");
+			File targetpath = new File((String)reportdirectory+"/passedscreens/"+methodname+"-"+dtformat.format(cal.getTime())+".png");
+		try
+		{ 
+			FileUtils.copyfile(sourcepath,targetpath);
+		
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
+		Reporter.log("<a href='"+targetpath.getAbsolutePath()+"'>"+"<img src='"+targetpath.getAbsolutePath()+"'height='100' width='100'/></a>");
+		
+		}
+		
+		
+		
+	}
+
+	public void onTestFailure(ITestResult result) {
+		Reporter.log("test is failure:"+result.getMethod().getMethodName());	
+		
+	}
+
+	public void onTestSkipped(ITestResult result) {
+		Reporter.log("test was skipped:"+result.getMethod().getMethodName());	
+		
+	}
+
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

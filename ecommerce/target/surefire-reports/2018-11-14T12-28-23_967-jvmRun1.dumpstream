@@ -1,0 +1,45 @@
+# Created at 2018-11-14T12:28:33.693
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2018-11-14T12:28:43.900
+Unexpected IOException with stream: log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+
+
+# Created at 2018-11-14T12:28:43.907
+Unexpected IOException with stream: log4j:WARN Please initialize the log4j system properly.
+
+
+# Created at 2018-11-14T12:28:43.921
+Unexpected IOException with stream: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+
+# Created at 2018-11-14T12:28:51.217
+Unexpected IOException: 8,1,com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration,beforeTest(com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration),null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'DESKTOP-IF5VLLO'\002C ip: '192.168.43.138'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=45.0\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 93279e56-e548-432f-a6bc-4976147495f9,null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'DESKTOP-IF5VLLO'\002C ip: '192.168.43.138'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=45.0\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 93279e56-e548-432f-a6bc-4976147495f9,Tc001_CustomerRegistration.beforeTest:26->BasePage.browserlaunch:73 \00BB UnreachableBrowser,org.openqa.selenium.remote.UnreachableBrowserException: \000AError communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'DESKTOP-IF5VLLO'\002C ip: '192.168.43.138'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=45.0\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 93279e56-e548-432f-a6bc-4976147495f9\000A\0009at com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration.beforeTest(Tc001_CustomerRegistration.java:26)\000ACaused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect\000A\0009at com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration.beforeTest(Tc001_CustomerRegistration.java:26)\000ACaused by: java.net.ConnectException: Connection refused: connect\000A\0009at com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration.beforeTest(Tc001_CustomerRegistration.java:26)\000A
+
+
+# Created at 2018-11-14T12:28:51.319
+Unexpected IOException: 9,1,com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration,startreport(com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration),null,null,null
+
+
+# Created at 2018-11-14T12:28:51.349
+Unexpected IOException: 9,1,com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration,CustomerRegistration(com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration),null,Error communicating with the remote browser. It may have died.\000ABuild info: version: '2.53.1'\002C revision: 'a36b8b1cd5757287168e54b817830adce9b0158d'\002C time: '2016-06-30 19:26:09'\000ASystem info: host: 'DESKTOP-IF5VLLO'\002C ip: '192.168.43.138'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_171'\000ADriver info: driver.version: RemoteWebDriver\000ACapabilities [{applicationCacheEnabled=true\002C rotatable=false\002C handlesAlerts=true\002C databaseEnabled=true\002C version=45.0\002C platform=WINDOWS\002C nativeEvents=false\002C acceptSslCerts=true\002C webStorageEnabled=true\002C locationContextEnabled=true\002C browserName=firefox\002C takesScreenshot=true\002C javascriptEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 93279e56-e548-432f-a6bc-4976147495f9,null
+
+
+# Created at 2018-11-14T12:28:51.378
+Unexpected IOException: 9,1,com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration,endreport(com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration),null,null,null
+
+
+# Created at 2018-11-14T12:28:51.400
+Unexpected IOException: 9,1,com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration,afterTest(com.durgasoft.selenium.ecommerce.homepage.Tc001_CustomerRegistration),null,null,null
+
+
+# Created at 2018-11-14T12:28:51.845
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

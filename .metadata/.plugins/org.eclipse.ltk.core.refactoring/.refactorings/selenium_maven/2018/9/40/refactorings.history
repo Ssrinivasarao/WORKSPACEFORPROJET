@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;excel&apos; to &apos;Excel_Apachi_poi&apos;&#x0D;&#x0A;- Original project: &apos;selenium_maven&apos;&#x0D;&#x0A;- Original element: &apos;selenium_maven/src/test/java/excel&apos;&#x0D;&#x0A;- Renamed element: &apos;selenium_maven/src/test/java/Excel_Apachi_poi&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;excel&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;excel" name="Excel_Apachi_poi" qualified="false" references="true" stamp="1538308804992" textual="false" version="1.0"/>
+</session>
